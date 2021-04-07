@@ -38,16 +38,17 @@ Route::get('download/{invoice_number}/{file_name}', 'InvoicesDetailsController@g
 Route::get('View_file/{invoice_number}/{file_name}', 'InvoicesDetailsController@open_file');
 
 Route::post('delete_file', 'InvoicesDetailsController@destroy')->name('delete_file');
-
 Route::get('/edit_invoice/{id}', 'InvoicesController@edit');
-
 Route::get('/Status_show/{id}', 'InvoicesController@show')->name('Status_show');
-
 Route::post('/Status_Update/{id}', 'InvoicesController@Status_Update')->name('Status_Update');
 
 Route::resource('products', 'ProductsController');
 
 
+Route::resource('Archive', 'InvoiceAchiveController');
+Route::get('Invoice_Paid','InvoicesController@Invoice_Paid');
+Route::get('Invoice_UnPaid','InvoicesController@Invoice_UnPaid');
+Route::get('Invoice_Partial','InvoicesController@Invoice_Partial');
 
 
 

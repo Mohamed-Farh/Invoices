@@ -35,6 +35,7 @@
 							<li><a class="slide-item" href="{{ url('/' . $page='chart-flot') }}">الفواتير المدفوعة</a></li>
 							<li><a class="slide-item" href="{{ url('/' . $page='chart-chartjs') }}">الفواتير غير المدفوعة</a></li>
 							<li><a class="slide-item" href="{{ url('/' . $page='chart-echart') }}">الفواتير المدفوعة جزئياً</a></li>
+							<li><a class="slide-item" href="{{ url('/' . ($page = 'Archive')) }}">ارشيف الفواتير</a></li>
 						</ul>
 					</li>
 					<li class="side-item side-item-category">التقارير</li>
